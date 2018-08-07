@@ -1,4 +1,4 @@
-import Vue from '../src/vuets'
+import Vue from '../src/Vue'
 
 /**
  * Vue test

@@ -3,9 +3,9 @@
   "version": "0.0.1-development",
   "description": "typescript version vue",
   "keywords": [],
-  "main": "dist/vuets.umd.js",
-  "module": "dist/vuets.es5.js",
-  "typings": "dist/types/vuets.d.ts",
+  "main": "dist/Vue.umd.js",
+  "module": "dist/Vue.es5.js",
+  "typings": "dist/types/vue.d.ts",
   "files": [
     "dist"
   ],
