@@ -11,6 +11,12 @@ Rewrite vue using Typescript
 
 [doc](https://ueqt.github.io/vuets/)
 
+### Debug
+
+`Tests` can debug unittest
+
+run `examples/index.html` or use `Web`, can debug packed ts
+
 ### NPM scripts
 
  - `npm t`: Run test suite

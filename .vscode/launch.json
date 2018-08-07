@@ -17,6 +17,12 @@
         "${workspaceRoot}/dist/**/*"
       ],
       "cwd": "${workspaceRoot}"
+    },
+    {
+      "name": "Web",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/examples/index.html"
     }
   ]
 }
