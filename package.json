@@ -71,7 +71,9 @@
         "statements": 95
       }
     },
-    "collectCoverage": true
+    "collectCoverage": true,
+    "verbose": true,
+    "testURL": "http://localhost/"
   },
   "prettier": {
     "semi": false,
