@@ -1,13 +1,15 @@
 # VueTs
 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ueqt/vuets.svg)](https://greenkeeper.io/)
 [![Travis](https://img.shields.io/travis/ueqt/vuets.svg)](https://travis-ci.org/ueqt/vuets)
 [![Coveralls](https://img.shields.io/coveralls/ueqt/vuets.svg)](https://coveralls.io/github/ueqt/vuets)
 [![Dev Dependencies](https://david-dm.org/ueqt/vuets.svg)](https://david-dm.org/ueqt/vuets?type=dev)
+[![GitHub stars](https://img.shields.io/github/stars/ueqt/vuets.svg?style=social&logo=github&label=Stars)](https://github.com/ueqt/vuets)
 <!-- [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://paypal.me/ueqt) -->
 
 Rewrite vue using Typescript
+
+[doc](https://ueqt.github.io/vuets/)
 
 ### NPM scripts
 
