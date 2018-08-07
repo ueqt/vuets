@@ -21,6 +21,8 @@
     "typedoc",
     "precommit",
     "lcov",
-    "camelcase"
+    "camelcase",
+    "truthy",
+    "instantiable"
   ]
 }
