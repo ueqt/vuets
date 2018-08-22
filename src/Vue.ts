@@ -1,7 +1,7 @@
-import { Compile } from './core/Compile'
-import { observe } from './core/observe'
-import { VueOption } from './core/vueOption'
-import { Watcher } from './core/Watcher'
+import { Compile } from './core/Compile';
+import { observe } from './core/observe';
+import { VueOption } from './core/vueOption';
+import { Watcher } from './core/Watcher';
 
 /**
  * Vue
@@ -11,31 +11,31 @@ export default class Vue {
   /**
    * 属性
    */
-  public data!: { [key: string]: any }
+  public data!: { [key: string]: any };
 
   /**
    * 方法
    */
-  public methods?: any
+  public methods?: any;
 
-  public $el: HTMLElement | null
+  public $el: HTMLElement | null;
 
-  private el!: string | HTMLElement
+  private el!: string | HTMLElement;
 
   constructor(options: VueOption) {
-    this.data = options.data || {}
-    this.el = options.el
-    this.methods = options.methods
+    this.data = options.data || {};
+    this.el = options.el;
+    this.methods = options.methods;
 
     Object.keys(this.data).forEach((key: string) => {
-      this.proxyKeys(key) // 将Vue.data[key] = '' 的调用方式改成 Vue[key] = ''
-    })
+      this.proxyKeys(key); // 将Vue.data[key] = '' 的调用方式改成 Vue[key] = ''
+    });
 
-    observe(this.data)
-    const compile = new Compile(this.el, this)
-    this.$el = compile.el
+    observe(this.data);
+    const compile = new Compile(this.el, this);
+    this.$el = compile.el;
     if (options.mounted) {
-      options.mounted.call(this)
+      options.mounted.call(this);
     }
   }
 
@@ -44,11 +44,11 @@ export default class Vue {
       enumerable: false,
       configurable: true,
       get: () => {
-        return this.data[key]
+        return this.data[key];
       },
       set: (newValue: any) => {
-        this.data[key] = newValue
+        this.data[key] = newValue;
       }
-    })
+    });
   }
 }
