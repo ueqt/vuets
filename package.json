@@ -80,7 +80,7 @@
     "setupTestFrameworkScriptFile": "<rootDir>/test/helpers/testSetup.default.js"
   },
   "prettier": {
-    "semi": false,
+    "semi": true,
     "singleQuote": true
   },
   "devDependencies": {
