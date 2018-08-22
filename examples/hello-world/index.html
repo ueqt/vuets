@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Hello World</title>
+</head>
+
+<body>
+  <div id="app">
+    <h2>{{title}}</h2>
+    <input v-model="name">
+    <h1>{{name}}</h1>
+    <button v-on:click="clickMe">click me!</button>
+  </div>
+  <script src="../../dist/vue.umd.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        title: 'hello world',
+        name: 'canfoo'
+      },
+      methods: {
+        clickMe: function () {
+          this.title = 'hello world';
+        }
+      },
+      mounted: function () {
+        window.setTimeout(() => {
+          this.title = '您好';
+        }, 1000)
+      }
+    })
+  </script>
+</body>
+
+</html>

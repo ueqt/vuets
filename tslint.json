@@ -1,6 +1,20 @@
 {
+  "rules": {
+    "no-relative-imports": false,
+    "typedef": false,
+    "no-any": false,
+    "variable-name": [
+      true,
+      "allow-leading-underscore"
+    ],
+    "no-console": [
+      false
+    ],
+    "no-inner-html": false
+  },
   "extends": [
     "tslint-config-standard",
-    "tslint-config-prettier"
+    "tslint-config-prettier",
+    "tslint-microsoft-contrib"
   ]
 }

@@ -4,6 +4,7 @@ import sourceMaps from 'rollup-plugin-sourcemaps'
 import camelCase from 'lodash.camelcase'
 import typescript from 'rollup-plugin-typescript2'
 import json from 'rollup-plugin-json'
+import replace from 'rollup-plugin-replace'
 
 const pkg = require('./package.json')
 
@@ -35,5 +36,9 @@ export default {
 
     // Resolve source maps to the original source
     sourceMaps(),
+
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    })
   ],
 }

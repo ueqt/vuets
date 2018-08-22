@@ -9,11 +9,19 @@
 
 Rewrite vue using Typescript
 
+* This is a personal research project, DO NOT USE IN PRODUCTION!
+
 [doc](https://ueqt.github.io/vuets/)
 
 ### Debug
 
+- UnitTest
+
 `Tests` can debug unittest
+
+- Web
+
+`npm start`或者`npm run build`
 
 run `examples/index.html` or use `Web`, can debug packed ts
 
@@ -26,3 +34,5 @@ run `examples/index.html` or use `Web`, can debug packed ts
  - `npm run build`: Generate bundles and typings, create docs
  - `npm run lint`: Lints code
  - `npm run commit`: Commit using conventional commit style ([husky](https://github.com/typicode/husky) will tell you to use it if you haven't :wink:)
+
+## 如果vscode里observe.spec.ts里`toHaveBeenLogged`显示红色，可以先打开`helpers/testSetup.d.ts`就好了
