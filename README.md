@@ -35,4 +35,4 @@ run `examples/index.html` or use `Web`, can debug packed ts
  - `npm run lint`: Lints code
  - `npm run commit`: Commit using conventional commit style ([husky](https://github.com/typicode/husky) will tell you to use it if you haven't :wink:)
 
-## 如果vscode里observe.spec.ts里`toHaveBeenLogged`显示红色，可以先打开`helpers/testSetup.d.ts`就好了
+* 如果vscode里observe.spec.ts里`toHaveBeenLogged`显示红色，可以先打开`helpers/testSetup.d.ts`就好了
