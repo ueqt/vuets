@@ -1,7 +1,6 @@
 import { Compile } from './core/Compile';
 import { observe } from './core/observe';
-import { VueOption } from './core/vueOption';
-import { Watcher } from './core/Watcher';
+import { VueOption } from './core/VueOption';
 
 /**
  * Vue
